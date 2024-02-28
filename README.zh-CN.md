@@ -2,11 +2,29 @@
 SoraWebui 是一个开源项目，允许用户使用 OpenAI 的 Sora 模型使用文本在线生成视频，从而简化视频创建，并具有轻松的一键网站部署功能。
 👉 [SoraWebui](https://sorawebui.com)
 
-<div align="left">
+[English](https://github.com/SoraWebui/SoraWebui/blob/main/README.md) | 简体中文 | [日本語](https://github.com/SoraWebui/SoraWebui/blob/main/README.ja-JP.md)
 
-[English](https://github.com/SoraWebui/SoraWebui/blob/main/README.md) | 简体中文
+# 项目计划
+- ✅ 通过文字生成视频（使用[FakeSoraAPI](https://github.com/SoraWebui/FakeSoraAPI)）:
 
-</div>
+  您可以在 👉 [main](https://github.com/SoraWebui/SoraWebui/tree/main) 或 👉 [version-0.1](https://github.com/SoraWebui/SoraWebui/tree/version-0.1) 中体验该功能
+
+- ✅ 使用谷歌登录:
+
+  您可以在 👉 [login](https://github.com/SoraWebui/SoraWebui/tree/login) 或 👉 [version-0.2](https://github.com/SoraWebui/SoraWebui/tree/version-0.2) 中体验该功能
+
+- [ ] Google 一键登录:
+
+  即将推出
+
+- [ ] Stripe支付：
+
+  即将推出
+
+- [ ] 添加 OpenAI 的 Sora API：
+
+  等待 OpenAI 开放 Sora 的 API，随后我们就会推出该功能.
+
 
 ## 快速开始
 
@@ -55,5 +73,9 @@ pnpm dev
 ![success_deploy.jpg](https://sorawebui.com/success_deploy.jpg)
 
 
-### 重要事项
+# 重要事项
 SoraWebui 需要 [FakeSoraAPI](https://github.com/SoraWebui/FakeSoraAPI) 才能正常运行。
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=SoraWebui/SoraWebui&type=Date)](https://star-history.com/#SoraWebui/SoraWebui&Date)

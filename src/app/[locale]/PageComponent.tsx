@@ -22,6 +22,7 @@ const PageComponent = ({
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
+    setChooseAPI('FakeSora');
     if (!textStr) {
       setVideoList(randomVideo(2));
       return;
@@ -85,6 +86,8 @@ const PageComponent = ({
     event.target.pause();
   };
 
+  const [chooseAPI, setChooseAPI] = useState('FakeSora');
+
   return (
     <>
       <HeadInfo
@@ -104,6 +107,12 @@ const PageComponent = ({
               <div className="mb-5 max-w-[528px] lg:mb-8">
                 <p className="text-[#7c8aaa] text-xl">{indexLanguageText.pDescription}</p>
               </div>
+              <a
+                href="https://www.producthunt.com/posts/sorawebui?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-sorawebui"
+                target="_blank"><img
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=440945&theme=light"
+                alt="SoraWebui - Open&#0045;source&#0032;Sora&#0032;Web&#0032;Client | Product Hunt"
+              /></a>
             </div>
             <div>
               <div
@@ -124,6 +133,33 @@ const PageComponent = ({
                       maxLength={1000}
                     />
                   </div>
+                  <div className="flex justify-center items-center space-x-3 px-2 py-2 bg-white text-black">
+                    <span
+                      className={`cursor-pointer p-2 rounded-lg mx-0.5 flex items-center mt-1 border ${chooseAPI == 'FakeSora' ? 'border-[#ffa11b]' : 'border-gray-200'}`}
+                      onClick={() => setChooseAPI('FakeSora')}
+                    >
+                      <span>FakeSora</span>
+                    </span>
+                    <span
+                      className={`cursor-pointer p-2 rounded-lg mx-0.5 flex items-center mt-1 border ${chooseAPI == 'Sora' ? 'border-[#ffa11b]' : 'border-gray-200'}`}
+                      onClick={() => setChooseAPI('Sora')}
+                    >
+                      <span>Sora</span>
+                    </span>
+                  </div>
+                  {
+                    chooseAPI == 'FakeSora' ?
+                      <div className="flex justify-center items-center space-x-3 px-2 bg-white text-red-400">
+                        {indexLanguageText.fakeSoraTip}
+                      </div>
+                      :
+                      chooseAPI == 'Sora' ?
+                        <div className="flex justify-center items-center space-x-3 px-2 bg-white text-red-400">
+                          {indexLanguageText.soraTip}
+                        </div>
+                        :
+                        null
+                  }
                   <div className="inset-x-px bottom-1 bg-white">
                     <div
                       className="flex justify-center items-center space-x-3 border-t border-gray-200 px-2 py-2">

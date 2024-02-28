@@ -2,11 +2,30 @@
 SoraWebui is an open-source project that simplifies video creation by allowing users to generate videos online with OpenAI's Sora model using text, featuring easy one-click website deployment.
 👉 [SoraWebui](https://sorawebui.com)
 
-<div align="left">
+English | [简体中文](https://github.com/SoraWebui/SoraWebui/blob/main/README.zh-CN.md) | [日本語](https://github.com/SoraWebui/SoraWebui/blob/main/README.ja-JP.md)
 
-English | [简体中文](https://github.com/SoraWebui/SoraWebui/blob/main/README.zh-CN.md)
 
-</div>
+# Project Plan
+- ✅ Generate video by words(Use [FakeSoraAPI](https://github.com/SoraWebui/FakeSoraAPI)):
+
+  You can see this feature in 👉 [main](https://github.com/SoraWebui/SoraWebui/tree/main) or 👉 [version-0.1](https://github.com/SoraWebui/SoraWebui/tree/version-0.1)
+
+- ✅ Login with Google:
+
+  You can see this feature in 👉 [login](https://github.com/SoraWebui/SoraWebui/tree/login) or 👉 [version-0.2](https://github.com/SoraWebui/SoraWebui/tree/version-0.2)
+
+- [ ] Google One Tap Login:
+
+  Coming soon
+
+- [ ] Stripe payment：
+
+  Coming soon
+
+- [ ] Add OpenAI’s Sora API：
+
+  Waiting for OpenAI launch Sora's API, then we will launch this feature.
+
 
 ## Quick Started
 
@@ -55,5 +74,10 @@ pnpm dev
 ![success_deploy.jpg](https://sorawebui.com/success_deploy.jpg)
 
 
-### Important
+# Important
 SoraWebui requires [FakeSoraAPI](https://github.com/SoraWebui/FakeSoraAPI) to function properly.
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=SoraWebui/SoraWebui&type=Date)](https://star-history.com/#SoraWebui/SoraWebui&Date)
